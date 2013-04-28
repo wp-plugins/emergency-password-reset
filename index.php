@@ -3,7 +3,7 @@
  Plugin Name: Emergency password reset
  Plugin URI: 
  Description: Resets all passwords, emailing them to users
- Version: 0.1
+ Version: 0.11
  Author: andymoyle
  Author URI:http://www.themoyles.co.uk
  */
