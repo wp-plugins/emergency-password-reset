@@ -26,7 +26,7 @@ This plugin allows the admin to reset all the passwords and automatically email 
 When you click rest passwords, the plugin recreates random passwords for every user and emails them the new password. If the user doesn't get the email they will have to click the Lost password link to recreate their password!
 
 == Screenshots ==
-1 The main and only screen!
+1. The main and only screen!
 
 == Changelog ==
 * 0.1 Initial release
