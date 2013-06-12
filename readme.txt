@@ -16,7 +16,7 @@ This plugin allows the admin to reset all the passwords and automatically email 
 
 == Installation ==
 
-1. Upload the `emergency-password-reser` directory to the `/wp-content/plugins/` directory.
+1. Upload the `emergency-password-reset` directory to the `/wp-content/plugins/` directory.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 3. Click on Emergency Password Reset in the Users menu
 4. Click on the 'Reset Passwords' button
@@ -33,3 +33,4 @@ This plugin allows the admin to reset all the passwords and automatically email 
 
 == Upgrade notice ==
 * 0.1
+
