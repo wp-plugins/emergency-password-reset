@@ -22,10 +22,11 @@ This plugin allows the admin to reset all the passwords and automatically email 
 4. Click on the 'Reset Passwords' button
 
 == Frequently Asked Questions ==
-* How does it work? When you click rest passwords, the plugin recreates random passwords for every user and emails them the new password. If the user doesn't get the email they will have to click the Lost password link to recreate their password!
+= How does it work? =
+When you click rest passwords, the plugin recreates random passwords for every user and emails them the new password. If the user doesn't get the email they will have to click the Lost password link to recreate their password!
 
 == Screenshots ==
-* screenshot1.png
+1 The main and only screen!
 
 == Changelog ==
 * 0.1 Initial release
