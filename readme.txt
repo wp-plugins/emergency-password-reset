@@ -1,4 +1,4 @@
-=== Emergency Password Rest ===
+=== Emergency Password Reset ===
 Contributors: andymoyle
 Donate link: http://www.themoyles.co.uk/
 Tags: emergency password reset
@@ -29,6 +29,7 @@ This plugin allows the admin to reset all the passwords and automatically email 
 
 == Changelog ==
 * 0.1 Initial release
+* 0.2 Correct the title in readme.txt!
 
 == Upgrade notice ==
 * 0.1
