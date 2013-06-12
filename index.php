@@ -2,8 +2,8 @@
 /*
  Plugin Name: Emergency password reset
  Plugin URI: 
- Description: Resets all passwords, emailing them to users
- Version: 0.11
+ Description: Resets all passwords, emailing them to users. <a href="./users.php?page=emergency_password_reset_main">Reset Passwords now</a>
+ Version: 0.2
  Author: andymoyle
  Author URI:http://www.themoyles.co.uk
  */
@@ -51,5 +51,20 @@ function emergency_password_reset($user_id)
         add_filter('wp_mail_content_type',create_function('', 'return "text/html";'));
         wp_mail($user->user_email,'Password reset for '.site_url(),$message);
     }
+}
+
+
+// Adding WordPress plugin action links
+ 
+add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), 'emergency_password_reset_add_plugin_action_links' );
+function emergency_password_reset_add_plugin_action_links( $links ) {
+ 
+	return array_merge(
+		array(
+			'settings' => '<a href="' . get_bloginfo( 'wpurl' ) . '/wp-admin/users.php?page=emergency_password_reset_main">Reset Passwords</a>'
+		),
+		$links
+	);
+ 
 }
 ?>

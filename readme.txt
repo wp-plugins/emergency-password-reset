@@ -4,7 +4,7 @@ Donate link: http://www.themoyles.co.uk/
 Tags: emergency password reset
 Requires at least: 2.7.0
 Tested up to: 3..5.1
-Stable tag: 0.11
+Stable tag: 0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,15 +22,15 @@ This plugin allows the admin to reset all the passwords and automatically email 
 4. Click on the 'Reset Passwords' button
 
 == Frequently Asked Questions ==
-*
+* How does it work? When you click rest passwords, the plugin recreates random passwords for every user and emails them the new password. If the user doesn't get the email they will have to click the Lost password link to recreate their password!
 
 == Screenshots ==
-*
+* screenshot1.png
 
 == Changelog ==
 * 0.1 Initial release
 * 0.2 Correct the title in readme.txt!
 
 == Upgrade notice ==
-* 0.1
+* 0.2
 
