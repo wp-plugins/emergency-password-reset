@@ -4,7 +4,7 @@ Donate link: http://www.themoyles.co.uk/
 Tags: emergency password reset
 Requires at least: 2.7.0
 Tested up to: 3..5.1
-Stable tag: 0.2
+Stable tag: 0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -31,7 +31,8 @@ When you click rest passwords, the plugin recreates random passwords for every u
 == Changelog ==
 * 0.1 Initial release
 * 0.2 Correct the title in readme.txt!
+* 0.3 Add Screenshot
 
 == Upgrade notice ==
-* 0.2
+* 0.3
 

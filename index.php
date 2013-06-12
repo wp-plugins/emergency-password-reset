@@ -3,7 +3,7 @@
  Plugin Name: Emergency password reset
  Plugin URI: 
  Description: Resets all passwords, emailing them to users. <a href="./users.php?page=emergency_password_reset_main">Reset Passwords now</a>
- Version: 0.2
+ Version: 0.3
  Author: andymoyle
  Author URI:http://www.themoyles.co.uk
  */
