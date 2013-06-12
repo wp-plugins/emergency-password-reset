@@ -25,6 +25,11 @@ This plugin allows the admin to reset all the passwords and automatically email 
 = How does it work? =
 When you click rest passwords, the plugin recreates random passwords for every user and emails them the new password. If the user doesn't get the email they will have to click the Lost password link to recreate their password!
 
+= Will I be secure now from a hack? =
+Not necessarily. We advise you change your SALTS in the wp-config.php file which will force logouts for all users. Wordpress provide a <a href="https://api.wordpress.org/secret-key/1.1/salt/">tool</a> to generate new ones.
+Check out our <a href="http://www.themoyles.co.uk/2013/02/so-your-wordpress-site-has-been-hacked/">blog post</a> on hacked Wordpress sites
+
+
 == Screenshots ==
 1. The main and only screen!
 

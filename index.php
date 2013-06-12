@@ -25,9 +25,11 @@ function emergency_password_reset_main()
         echo'<h2>Emergency Password Reset Main</h2>';
         if(!empty($_POST['emergency_accept']) && check_admin_referer('emergency_reset','emergency_reset'))
         {
-            echo'<p>Okay...</p>';
+			echo'<p>Okay...</p>';
             $results=$wpdb->get_results('SELECT ID FROM '.$wpdb->prefix.'users');
             if($results){foreach($results AS $row){emergency_password_reset($row->ID);}}
+            echo '<h2>All done</h2><p>Please express your relief and appreciation with a coffee donation! <form class="right" action="https://www.paypal.com/cgi-bin/webscr" method="post"><input type="hidden" name="cmd" value="_s-xclick"><input type="hidden" name="hosted_button_id" value="R7YWSEHFXEU52"><input type="image"  src="https://www.paypal.com/en_GB/i/btn/btn_donate_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online."><img alt=""  border="0" src="https://www.paypal.com/en_GB/i/scr/pixel.gif" width="1" height="1"></form></p>';
+	   
         }
         else
         {
