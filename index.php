@@ -3,7 +3,7 @@
  Plugin Name: Emergency password reset
  Plugin URI: http://www.themoyles.co.uk
  Description: Resets all passwords, emailing them to users. <a href="./users.php?page=emergency_password_reset_main">Reset Passwords now</a>
- Version: 0.4
+ Version: 0.5
  Author: andymoyle
  Author URI:http://www.themoyles.co.uk
  */
@@ -35,6 +35,9 @@ function emergency_password_reset_main()
 		{
 			$wpdb->query('UPDATE '.$wpdb->users.' SET user_login="'.esc_sql(stripslashes($_POST['admin'])).'" WHERE user_login="admin"');
 			echo'<div class="updated fade"><p><strong>Admin username reset to "'.stripslashes($_POST['admin']).'"</strong></p></div>';
+			echo'<p><form action="" method="post">';
+            echo wp_nonce_field('emergency_reset','emergency_reset');
+            echo'<input type="hidden" name="emergency_accept" value="yes"/><input type="submit" value="Reset all passwords"/></form></p>';
 		}
         else
         {
