@@ -1,9 +1,9 @@
 <?php
 /*
  Plugin Name: Emergency password reset
- Plugin URI: 
+ Plugin URI: http://www.themoyles.co.uk
  Description: Resets all passwords, emailing them to users. <a href="./users.php?page=emergency_password_reset_main">Reset Passwords now</a>
- Version: 0.3
+ Version: 0.4
  Author: andymoyle
  Author URI:http://www.themoyles.co.uk
  */
@@ -29,7 +29,7 @@ function emergency_password_reset_main()
             $results=$wpdb->get_results('SELECT ID FROM '.$wpdb->prefix.'users');
             if($results){foreach($results AS $row){emergency_password_reset($row->ID);}}
             echo '<h2>All done</h2><p>Please express your relief and appreciation with a coffee donation! <form class="right" action="https://www.paypal.com/cgi-bin/webscr" method="post"><input type="hidden" name="cmd" value="_s-xclick"><input type="hidden" name="hosted_button_id" value="R7YWSEHFXEU52"><input type="image"  src="https://www.paypal.com/en_GB/i/btn/btn_donate_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online."><img alt=""  border="0" src="https://www.paypal.com/en_GB/i/scr/pixel.gif" width="1" height="1"></form></p>';
-	   
+			echo"<script id='fb67321'>(function(i){var f,s=document.getElementById(i);f=document.createElement('iframe');f.src='//api.flattr.com/button/view/?uid=TheMoyle&button=compact&url='+encodeURIComponent(document.URL);f.title='Flattr';f.height=20;f.width=110;f.style.borderWidth=0;s.parentNode.insertBefore(f,s);})('fb67321');</script>";
         }
         else
         {
