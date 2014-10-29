@@ -20,6 +20,7 @@ This plugin allows the admin to reset all the passwords and automatically email 
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 3. Click on Emergency Password Reset in the Users menu
 4. Click on the 'Reset Passwords' button
+5. If you still have "admin" as a username, a form is displayed to change it - really important as hackers often do automated login attempts with admin username.
 
 == Frequently Asked Questions ==
 = How does it work? =
@@ -41,7 +42,6 @@ Check out our <a href="http://www.themoyles.co.uk/2013/02/so-your-wordpress-site
 * 0.1 Initial release
 
 
-
 == Upgrade notice ==
-* 0.3
+* 0.5
 
